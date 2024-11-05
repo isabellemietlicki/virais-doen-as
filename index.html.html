@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho: Doença Viral - Gripe</title>
+
+    <style>
+        /* Estilo geral: fontes e fundo */
+        body {
+            background-color: #eae2c6;  /* Fundo claro com aparência envelhecida */
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            color: #3d3a35;
+        }
+        .faq-section {
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 40px; /* Espaço entre as seções */
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column; /* Alinhamento em coluna */
+            gap: 20px; /* Espaçamento entre as caixas */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .faq-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        details {
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        summary {
+            font-size: 1.2em;
+            color: #106935;
+            font-weight: 600;
+            position: relative;
+            padding-right: 30px;
+            padding-bottom: 5px;
+        }
+
+        summary::after {
+            content: '\25BC'; /* Seta para baixo */
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(-180deg); /* Inverte a seta */
+        }
+
+        details[open] summary {
+            color: #106935;
+        }
+
+        header {
+            background-color: #106935;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #18422a;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff8dc;
+            border: 5px double #106935;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            color: #106935;
+            text-transform: uppercase;
+            border-bottom: 2px dashed #143f26;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .h2 {
+            text-align: center;
+            color: #fdfdfd;
+            text-transform: uppercase;
+            border-bottom: 2px dashed #143f26;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline li {
+            margin: 15px 0;
+            background-color: #d2b48c;
+            padding: 10px;
+            border-left: 5px solid #106935;
+            font-weight: bold;
+        }
+
+        .imagem-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imagem-container img {
+            max-width: 50%;
+            height: auto;
+            border: 3px solid #106935;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        
+        }
+
+        .nota {
+            background-color: #fff8dc;
+            border-left: 5px solid #106935;
+            padding: 10px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #143522;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background-color: #106935;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #133d25;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Doença Viral - Gripe</h1>
+        <div class="subtitulo">
+            <h2 id="subtitulo" style="color: #ffffff;">Entenda mais sobre a gripe e como se proteger</h2></div>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>O que é a Gripe?</h2>
+            <p>A gripe é uma doença viral, transmitida por meio de gotículas que são expelidas pela fala, espirro ou tosse de uma pessoa contaminada. A transmissão também pode ocorrer por meio indireto, pelo contato das mãos em superfícies que apresentam carga viral.
+
+                A doença é causada pelo vírus Influenza, que é separado em quatro tipos: A, B, C e D. O vírus Influenza de tipo A é o mais comum em surtos, epidemias e pandemias, como a de H1N1 em 2009, que matou entre 151 mil e 575 mil pessoas, de acordo com o Centro de Controle e Prevenção de Doenças (CDC) dos Estados Unidos.
+                
+               <br> Embora os casos de gripe sejam mais frequentes no outono e no inverno, a transmissão da doença pode ocorrer em qualquer época do ano.</p>
+        </section>
+
+        <div class="imagem-container">
+            <img src="virus-influenza.jpg" alt="Imagem ilustrativa de células de vírus da gripe">
+            <p>Imagem ilustrativa de células virais da gripe.</p>
+        </div>
+
+        <section>
+            <h2>Agente Etiológico</h2>
+            <details>
+                <summary>Vírus Influenza</summary>
+                <p>O agente etiológico é o organismo causador da doença, no caso da gripe é o vírus Influenza, com subtipos como Influenza A e B. Cada um pode causar surtos, mas o Influenza A é mais associado a pandemias.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Sintomas e Sinais</h2>
+            <div class="nota">
+                <ul>
+                    <li>Febre</li>
+                    <li>Tosse e dor de garganta</li>
+                    <li>Calafrios e cansaço</li>
+                    <li>Dores no corpo e cabeça</li>
+                    <li>Congestão nasal</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tratamentos</h2>
+            <details>
+                <summary>Repouso e Hidratação</summary>
+                <p>O tratamento inclui repouso, quando necessário, antivirais prescritos e ingerir bastante líquidos
+
+                    <br>Beber bastante água, além de outros líquidos como chás e sucos, é muito importante para manter o cuidado com o organismo e melhorar da gripe rápido. Medicamentos para febre e dor devem ser usados sob orientação médica.</p>
+            </details>
+        </section>
+
+       
+
+        <section>
+            <h2>Curiosidades</h2>
+            <details>
+                <summary>Fatos sobre a Gripe</summary>
+                <p><ul>
+                    <li>Tomar chuva ou friagem pode causar a doença.
+                    
+                        Mito: a contaminação acontece pelas vias aéreas respiratórias.</li>
+                   
+                        <li>Uma gripe pode durar mais que uma semana.</li>
+
+                       <li> Chás naturais ajudam a curar.
+                        Mito: o chá ajuda a proporcionar bem-estar, mas não tem ação para sarar.</li>
+
+                        <li>A gripe pode causar complicações graves, como pneumonia, especialmente em crianças, idosos e pessoas imunocomprometidas. A vacinação anual ajuda na prevenção.</li></ul></p>
+            </details>
+        </section>
+
+        <button onclick="scrollToTop()">Voltar ao topo</button>
+    </div>
+
+    <footer>
+      
+        
+
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
